@@ -55,7 +55,7 @@ const SignUp = (props) => {
           <input type="password" id="cpassword" onChange={onChange} name ="cpassword" className="form-control" required minLength={5}/>
         </div>
         
-        <button type="submit" className="btn btn-primary">Submit</button>
+        <button type="submit" className="btn btn-primary">SignUp</button>
       </form>
     </div>
   )

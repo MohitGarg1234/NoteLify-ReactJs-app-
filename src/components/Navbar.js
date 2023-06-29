@@ -7,12 +7,14 @@ const Navbar = (props) => {
   let history = useNavigate();
 
   // useEffect(()=>{
-  //   console.log(location.pathname);
-  // },[location])
-  const handleLogout =()=>{
-    localStorage.removeItem('token');
-    history("/login");
-  }
+    //   console.log(location.pathname);
+    // },[location])
+    const handleLogout =()=>{
+      localStorage.removeItem('token');
+      history("/login");
+    }
+    const Login = location.pathname ==='/login';
+    const Signup = location.pathname ==='/signup';
   return (
     
   <nav className="navbar navbar-expand-lg bg-dark navbar-dark ">
@@ -34,9 +36,9 @@ const Navbar = (props) => {
     </div>
     {/* {(localStorage.getItem('token')) && <p className='text-primary mx-3'>NAME</p> } */}
     {!localStorage.getItem('token')?<form className='d-flex'>
-      {/* <Link disabled={localStorage.getItem('token')} className="btn btn-primary mx-1" to="/login" role='button'>Login</Link> */}
-      <Link className="btn btn-primary mx-1" to="/signup" role='button'>SignUp</Link>
-    </form>:<button onClick={handleLogout} className="btn btn-primary"> Logout </button>}
+      {!Login && <Link className="btn btn-primary mx-2" to="/login" role='button'>Login</Link>}
+      {!Signup && <Link className="btn btn-primary mx-2" to="/signup" role='button'>SignUp</Link>}
+      </form>:<button onClick={handleLogout} className="btn btn-primary mx-2"> Logout </button>}
 </nav>
   )
 }
