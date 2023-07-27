@@ -35,6 +35,7 @@ const Navbar = (props) => {
         </div>
     </div>
     {/* {(localStorage.getItem('token')) && <p className='text-primary mx-3'>NAME</p> } */}
+    
     {!localStorage.getItem('token')?<form className='d-flex'>
       {!Login && <Link className="btn btn-primary mx-2" to="/login" role='button'>Login</Link>}
       {!Signup && <Link className="btn btn-primary mx-2" to="/signup" role='button'>SignUp</Link>}
