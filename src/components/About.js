@@ -5,7 +5,7 @@ const About = () => {
   
   return (
     <div>
-      This is About 
+      This is Note storing website where you can crud note..... 
     </div>
   )
 }
