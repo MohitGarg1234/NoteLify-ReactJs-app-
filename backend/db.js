@@ -12,6 +12,7 @@ mongoose.set('strictQuery', true);
 const connectToMongo = async () => {
   try {
     const mongoUri = process.env.MONGO_URI;
+    console.log(mongoUri);
     // const mongoUri = "mongodb+srv://mgarg1557:AWQn92hXHsWysDPQ@noteswebapp-db.tuniyc3.mongodb.net/?retryWrites=true&w=majority&appName=NotesWebApp-DB";
     // if (!mongoUri) {
     //   throw new Error('MONGO_URI is not defined');
