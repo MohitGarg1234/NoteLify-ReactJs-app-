@@ -8,7 +8,7 @@ const About = () => {
       <div className="row">
         <div className="col-lg-6">
           <div className="about-content">
-            <h2 className="about-title">About Our NoteLify</h2>
+            <h2 className="about-title">About NoteLify</h2>
             <p className="about-text">
               Welcome to NoteLify, your go-to platform for organizing and managing your notes effortlessly. Whether you're a student, professional, or anyone who values capturing ideas on the go, our app provides a seamless experience tailored to your needs.
             </p>
