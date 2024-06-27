@@ -28,7 +28,7 @@ NoteLify is a web application designed to help users efficiently save, organize,
 ## Update a Note
 ![image](https://github.com/MohitGarg1234/NoteLify-ReactJs-app-/assets/92513931/5ac6fbbe-9cab-4520-b310-4f697bcb0d93)
 ## About Page
-![image](https://github.com/Ajitkumar-25/Notes_App/assets/98700726/90dfebb2-3653-4470-85a5-4ebe7c00e595)
+![image](https://github.com/MohitGarg1234/NoteLify-ReactJs-app-/assets/92513931/e56fb08d-45f6-429c-8663-d60afe7c2ac4)
 
 
 
