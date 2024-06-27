@@ -1,4 +1,4 @@
-# NotesApp
+# NoteLify
 
 ## Overview
 NoteLify is a go-to platform for organizing and managing notes effortlessly. Built using the MERN stack (MongoDB, Express.js, React.js, and Node.js), this application provides a seamless and responsive user experience.
@@ -31,4 +31,34 @@ NoteLify is a go-to platform for organizing and managing notes effortlessly. Bui
 ![image](https://github.com/MohitGarg1234/NoteLify-ReactJs-app-/assets/92513931/e56fb08d-45f6-429c-8663-d60afe7c2ac4)
 
 
+## Run Locally
+Clone the project
+```bash
+  git clone https://link-to-project
+```
+Go to the project directory
+For Backend 
+```bash
+  cd backend
+```
+Install dependencies
+```bash
+  npm install
+```
+Start the server
+```bash
+  nodemon index.js
+```
 
+For Frontend 
+```bash
+  cd ..   //Be in root directory
+```
+Install dependencies
+```bash
+  npm install
+```
+Start the server
+```bash
+  npm run start
+```
