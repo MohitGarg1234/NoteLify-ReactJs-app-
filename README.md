@@ -1,7 +1,7 @@
 # NotesApp
 
 ## Overview
-NoteLify is a web application designed to help users efficiently save, organize, and manage their notes. Built using the MERN stack (MongoDB, Express.js, React, and Node.js), this application provides a seamless and responsive user experience.
+NoteLify is a go-to platform for organizing and managing notes effortlessly. Built using the MERN stack (MongoDB, Express.js, React.js, and Node.js), this application provides a seamless and responsive user experience.
 
 ## Features
 - **User Authentication**: Secure login and registration using JWT (JSON Web Tokens).
@@ -9,7 +9,7 @@ NoteLify is a web application designed to help users efficiently save, organize,
 - **Responsive Design**: Mobile-friendly layout for use on various devices.
 
 ## Technology Stack
-- **Frontend**: React,
+- **Frontend**: React.js
 - **Backend**: Node.js, Express.js
 - **Database**: MongoDB
 - **Authentication**: JWT (JSON Web Tokens)
