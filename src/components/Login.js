@@ -18,7 +18,7 @@ const Login = (props) => {
           if(json.success){
             localStorage.setItem('token',json.authtoken)
             history("/");
-            props.showAlert("Login Successful","success")
+            props.showAlert("Login Successfull","success")
             
           }
           else{
@@ -29,20 +29,22 @@ const Login = (props) => {
         setCredentials({...credentials,[e.target.name]:e.target.value})
       }
   return (
-    <div className='mt-3'>
-      <h2 className='text-center my-2'>Login To Continue To Your Notes - iNotebook</h2>
-      <form onSubmit={handleSubmit}>
-        <div className="mb-3">
-            <label htmlFor="exampleInputEmail1" className="form-label">Email address</label>
+    <div className='d-flex justify-content-center align-items-center vh-100'>
+      <div className='p-5 rounded shadow' style={{ backgroundColor: '#ffffff', maxWidth: '400px', width: '100%' }}>
+        <h3 className='text-center mb-4' style={{ color: '#007bff' }}>Login To Continue</h3>
+        <form onSubmit={handleSubmit}>
+          <div className="mb-3">
+            <label htmlFor="email" className="form-label">Email address</label>
             <input type="email" className="form-control" value={credentials.email} onChange={onChange} id="email" name='email' aria-describedby="emailHelp"/>
             <div id="emailHelp" className="form-text">We'll never share your email with anyone else.</div>
-        </div>
-        <div className="mb-3">
-            <label htmlFor="exampleInputPassword1" className="form-label">Password</label>
+          </div>
+          <div className="mb-3">
+            <label htmlFor="password" className="form-label">Password</label>
             <input type="password" className="form-control" value={credentials.password} onChange={onChange} id="password" name='password'/>
-        </div>
-        <button type="submit" className="btn btn-primary">LogIn</button>
-      </form>
+          </div>
+          <button type="submit" className="btn btn-primary w-100">LogIn</button>
+        </form>
+      </div>
     </div>
   )
 }

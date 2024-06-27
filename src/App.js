@@ -21,7 +21,7 @@ function App() {
     }, 1500);
 }
   return (
-    <>
+    <div  style={{ backgroundColor: '#e79595'}}>
       <NoteState>
         <Router>
           <Navbar />
@@ -42,7 +42,7 @@ function App() {
           </div>
         </Router>
       </NoteState>
-    </>
+    </div>
   );
 }
 

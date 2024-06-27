@@ -16,11 +16,11 @@ const AddNote = (props) => {
   }
   return (
 
-    <div className="container my-3">
+    <div className="container my-3 rounded" style={{width:"70%",backgroundColor:"#ffffff",border:"1px solid gray"}}>
       <h1>Add a Note</h1>
       <form className="my3">
         <div className="mb-3">
-          <label htmlFor="title" className="form-label">Title          </label>
+          <label htmlFor="title" className="form-label">Title</label>
           <input type="text" className="form-control"id="title" name="title" value={note.title} onChange ={onChange} aria-describedby="emailHelp" minLength={3} required/>
         </div>
         <div className="mb-3">
@@ -32,7 +32,7 @@ const AddNote = (props) => {
           <input type="text" className="form-control"id="tag" name="tag" value={note.tag} onChange ={onChange} aria-describedby="emailHelp"/>
         </div>
 
-        <button disabled={note.title.length<3 || note.description.length<5} type="submit" onClick={handleClick} className="btn btn-primary">
+        <button disabled={note.title.length<3 || note.description.length<5} type="submit" onClick={handleClick} className="btn btn-primary mb-3">
           Add Note
         </button>
       </form>

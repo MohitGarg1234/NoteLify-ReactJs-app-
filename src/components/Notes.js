@@ -71,7 +71,7 @@ const Notes = (props) => {
           </div>
         </div>
       </div>
-      <div className="row my-3">
+      <div className="row p-3" style={{minHeight:"200px"}}>
         <h1>Your Notes</h1>
         {notes.map((note) => {
           return <Noteitem key={note._id} showAlert={props.showAlert} updateNote={updateNote} note={note} />
